@@ -21,8 +21,7 @@ while True:
             if i == 600:
                 csvwrite(time.strftime("%Y-%m-%d || %H:%M:%S,")+host+"access"+"\n")
                 print(time.strftime("%Y-%m-%d || %H:%M:%S,")+host+"access"+"\n")
-                
-                i =0
+                i = 0
         else:
             cou=cou + 1
             csvwrite(time.strftime("%Y-%m-%d || %H:%M:%S,")+"fail to connect "+host+"\n")
